@@ -15,7 +15,8 @@ setup(
     author_email='dev@crunch.io',
     license='Proprietary',
     install_requires=['CherryPy',
-                      'cr.db'
+                      'cr.db',
+                      'webtest'
                       ],
     tests_require=[],
     packages=find_packages(exclude=['ez_setup']),
