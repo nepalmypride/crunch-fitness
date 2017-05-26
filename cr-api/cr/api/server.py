@@ -39,7 +39,8 @@ class Root(object):
 
     def logout(self):
         """
-        Should log the user out, rendering them incapable of accessing the users endpoint, but
+        Should log the user out, rendering them incapable of accessing the users endpoint, and it
+        should redirect the user to the login page.
         """
 
     def distances(self):

@@ -16,4 +16,13 @@ Instructions
 
 Deliverable
 
-Publish your work in a GitHub repository.
+Publish your work in a GitHub repository.  Please use Python 2.x for your coding.  Feel free to modify this 
+readme to give any additional information a reviewer might need.
+
+Implementation Details
+
+<your details>
+
+Assumptions
+
+<your assumptions> 
