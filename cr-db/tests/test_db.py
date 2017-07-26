@@ -25,7 +25,6 @@ def test_loader():
 
 def test_load_dataset():
 
-
     #data_filename = _here + '/data/Stack-Overflow-Developer-Survey-2017.csv.zip'
 
     #if not os.path.exists(csv_filename):
@@ -53,12 +52,12 @@ def test_select_with_filter():
     """Provide a test to answer this question:
        "For women, how does formal education affect salary (adjusted)?"
 
+       Hint: use Combined Gender to filter for women.
+
        The task is to load the appropriate columns in to numpy and provide a table of results,
        or better, plot with matplotlib appropriately.  Be careful about the "missing" (None) data.
 
-
-       Answer but don't code: what would a generic solution look like to cross-tab columns?
-                              how would you handle multiple-response questions ie. "how does programming language affect salary for women?"
+       Answer but don't code: what would a generic solution look like to compare any columns containing categories?
 
     """
 

@@ -1,8 +1,14 @@
+import os
+
 import webtest
 import cherrypy
 from cr.api.server import Root
 from cr.db.store import global_settings as settings
 from cr.db.loader import load_data
+
+_here = os.path.dirname(__file__)
+
+
 
 def get_app():
     cherrypy.tree.mount(Root(settings), '/')
@@ -14,7 +20,7 @@ def app():
     settings.update({"url": "mongodb://localhost:27017/test_crunch_fitness"})
     if _app is None:
         _app = webtest.TestApp(get_app())
-        load_data(settings, clear=True)
+        load_data(_here + '/../../cr-db/tests/data/users.json', settings, clear=True)
     return _app
 
 
